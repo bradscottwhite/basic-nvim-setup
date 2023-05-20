@@ -80,7 +80,7 @@ set complete-=i   " disable scanning included files
 set complete-=t   " disable searching tags
 set autoindent
 set smartindent
-autocmd FileType c,java,shell,bash,vim,cpp,rust set ai et ts=4 sw=4 sts=4
+autocmd FileType c,java,shell,bash,vim,cpp,rust set ai et ts=2 sw=2 sts=2
 autocmd FileType javascript,typescript,html,css,react set ai et ts=2 sw=2 sts=2
 autocmd FileType go set ai noet ts=8 sw=8 sts=8
 set smarttab
