@@ -54,6 +54,17 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
 
 
+    " JS/TS/Graphql
+    Plug 'pangloss/vim-javascript'
+    Plug 'leafgarland/typescript-vim'
+    Plug 'peitalin/vim-jsx-typescript'
+    Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
+    Plug 'jparise/vim-graphql'
+
+    " JSX/TSX
+    Plug 'mxw/vim-jsx'
+    Plug 'pangloss/vim-javascript'
+
 call plug#end()
 
 " ------------------------------------------------
@@ -80,8 +91,13 @@ set complete-=i   " disable scanning included files
 set complete-=t   " disable searching tags
 set autoindent
 set smartindent
+
+" *****************************
+" SET TAB SPACE HERE:::::::::::
+" *****************************
+
 autocmd FileType c,java,shell,bash,vim,cpp,rust set ai et ts=2 sw=2 sts=2
-autocmd FileType javascript,typescript,html,css,react set ai et ts=2 sw=2 sts=2
+autocmd FileType javascript,typescript,html,css,react,typescriptreact set ai et ts=2 sw=2 sts=2
 autocmd FileType go set ai noet ts=8 sw=8 sts=8
 set smarttab
 set list
